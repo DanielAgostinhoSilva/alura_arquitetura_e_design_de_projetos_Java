@@ -1,4 +1,4 @@
-package br.com.alura.escola.dominio.aluno.aluno;
+package br.com.alura.escola.dominio.aluno;
 
 import lombok.Getter;
 

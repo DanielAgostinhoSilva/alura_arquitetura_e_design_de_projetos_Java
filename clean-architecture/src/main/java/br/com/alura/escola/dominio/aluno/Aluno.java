@@ -1,8 +1,11 @@
-package br.com.alura.escola.dominio.aluno.aluno;
+package br.com.alura.escola.dominio.aluno;
+
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Aluno {
     private CPF cpf;
     private String nome;
