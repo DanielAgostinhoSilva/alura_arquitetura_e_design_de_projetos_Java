@@ -13,4 +13,10 @@ class CPFTest {
         assertThrows(IllegalArgumentException.class, () -> new CPF("cpfinvalido"));
     }
 
+    @Test
+    void deveCriarCPFValido() {
+        CPF cpf = new CPF("414.648.150-38");
+        assertEquals("414.648.150-38", cpf.getNumero());
+    }
+
 }
