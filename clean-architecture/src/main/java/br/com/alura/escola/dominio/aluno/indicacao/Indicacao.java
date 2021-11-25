@@ -1,6 +1,6 @@
-package br.com.alura.escola.aluno.indicacao;
+package br.com.alura.escola.dominio.aluno.indicacao;
 
-import br.com.alura.escola.aluno.aluno.Aluno;
+import br.com.alura.escola.dominio.aluno.aluno.Aluno;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
