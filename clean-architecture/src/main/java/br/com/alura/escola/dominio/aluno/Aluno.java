@@ -1,5 +1,6 @@
 package br.com.alura.escola.dominio.aluno;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.util.ArrayList;
