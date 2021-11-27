@@ -1,6 +1,5 @@
 package br.com.alura.escola.dominio.aluno;
 
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ public class Aluno {
     private CPF cpf;
     private String nome;
     private Email email;
-    private List<Telefone> tefones = new ArrayList<>();
+    private List<Telefone> telefones = new ArrayList<>();
     private String senha;
 
     public Aluno(CPF cpf, String nome, Email email) {
@@ -21,6 +20,11 @@ public class Aluno {
     }
 
     public void adicionarTelefone(String ddd, String numero) {
-        this.tefones.add(new Telefone(ddd, numero));
+
+        if(telefones.size() == 2) {
+            throw new LimiteTelefoneAtingido(telefones);
+        }
+
+        this.telefones.add(new Telefone(ddd, numero));
     }
 }

@@ -30,7 +30,7 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
             sql = "INSERT INTO TELEFONE VALUES(?,?)";
             ps = connection.prepareStatement(sql);
 
-            for(Telefone telefone: aluno.getTefones()) {
+            for(Telefone telefone: aluno.getTelefones()) {
                 ps.setString(1, telefone.getDdd());
                 ps.setString(2, telefone.getNumero());
                 ps.execute();
