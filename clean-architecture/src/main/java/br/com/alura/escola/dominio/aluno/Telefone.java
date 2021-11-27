@@ -1,8 +1,10 @@
 package br.com.alura.escola.dominio.aluno;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 @Getter
+@EqualsAndHashCode
 public class Telefone {
     private String ddd;
     private String numero;
