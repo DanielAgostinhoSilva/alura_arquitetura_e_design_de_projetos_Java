@@ -2,6 +2,7 @@ package br.com.alura.escola.applicacao.aluno.matricular;
 
 import br.com.alura.escola.applicacao.matricular.MatricularAluno;
 import br.com.alura.escola.applicacao.matricular.MatricularAlunoDto;
+import br.com.alura.escola.dominio.PublicadorDeEventos;
 import br.com.alura.escola.dominio.aluno.Aluno;
 import br.com.alura.escola.dominio.aluno.CPF;
 import br.com.alura.escola.infra.aluno.RepositorioDeAlulnosEmMemoria;
@@ -14,7 +15,8 @@ public class MatricularAlunoTest {
     @Test
     void alunoDeveriaSerPersistido() {
         RepositorioDeAlulnosEmMemoria repositorio = new RepositorioDeAlulnosEmMemoria();
-        MatricularAluno useCase = new MatricularAluno(repositorio);
+        PublicadorDeEventos publicadorDeEventos = new PublicadorDeEventos();
+        MatricularAluno useCase = new MatricularAluno(repositorio, publicadorDeEventos);
 
         MatricularAlunoDto dto = new MatricularAlunoDto("Fulano", "123.456.789-00", "aluno@test.com");
         useCase.executa(dto);
