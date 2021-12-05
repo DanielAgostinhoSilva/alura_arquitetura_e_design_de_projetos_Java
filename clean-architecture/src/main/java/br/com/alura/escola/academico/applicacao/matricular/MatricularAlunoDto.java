@@ -1,7 +1,7 @@
 package br.com.alura.escola.academico.applicacao.matricular;
 
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
-import br.com.alura.escola.academico.dominio.aluno.CPF;
+import br.com.alura.escola.shared.dominio.CPF;
 import br.com.alura.escola.academico.dominio.aluno.Email;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
