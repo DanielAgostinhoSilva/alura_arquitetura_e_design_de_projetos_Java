@@ -10,7 +10,8 @@
         <module>academico</module>
         <module>shared</module>
         <module>gamificacao</module>
-    </modules>
+		<module>ui</module>
+	</modules>
 
 	<build>
 		<plugins>
