@@ -17,18 +17,6 @@ public class AlunoMatriculado implements Evento {
         this.momento = LocalDateTime.now();
     }
 
-//    public LocalDateTime momento() {
-//        return this.momento;
-//    }
-//
-//    public TipoDeEvento tipo() {
-//        return TipoDeEvento.ALUNO_MATRICULADO;
-//    }
-//
-//    public Map<String, Object> informacoes() {
-//        return Map.of("cpf", this.cpfDoAluno);
-//    }
-
     public CPF getCpfDoAluno() {
         return cpfDoAluno;
     }
