@@ -14,7 +14,7 @@ public class CalculadoraDeImpostosTest {
         Orcamento orcamento = new Orcamento(new BigDecimal("100"));
         CalculadoraDeImpostos calculadora = new CalculadoraDeImpostos();
 
-        BigDecimal impostoCalculado = calculadora.calcular(orcamento, TipoImposto.ICMS);
+        BigDecimal impostoCalculado = calculadora.calcular(orcamento, new ICMS());
 
         assertEquals(new BigDecimal("10.00"), impostoCalculado);
     }
@@ -24,7 +24,7 @@ public class CalculadoraDeImpostosTest {
         Orcamento orcamento = new Orcamento(new BigDecimal("100"));
         CalculadoraDeImpostos calculadora = new CalculadoraDeImpostos();
 
-        BigDecimal impostoCalculado = calculadora.calcular(orcamento, TipoImposto.ISS);
+        BigDecimal impostoCalculado = calculadora.calcular(orcamento, new ISS());
 
         assertEquals(new BigDecimal("6.00"), impostoCalculado);
     }
