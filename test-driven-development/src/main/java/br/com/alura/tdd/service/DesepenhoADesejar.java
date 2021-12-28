@@ -3,7 +3,7 @@ package br.com.alura.tdd.service;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class ReajusteADesejar implements Reajuste{
+public class DesepenhoADesejar implements Reajuste{
 
     @Override
     public BigDecimal calcular(BigDecimal valor) {
