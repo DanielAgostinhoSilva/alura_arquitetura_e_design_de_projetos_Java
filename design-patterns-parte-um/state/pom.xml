@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>template-method</artifactId>
+    <artifactId>state</artifactId>
 
     <dependencies>
         <dependency>
