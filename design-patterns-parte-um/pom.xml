@@ -13,6 +13,7 @@
         <module>chain-of-responsibility</module>
         <module>template-method</module>
         <module>state</module>
+        <module>command</module>
     </modules>
 
     <properties>
